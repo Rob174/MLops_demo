@@ -1,0 +1,9 @@
+tensorflow
+keras
+torch
+numpy
+scipy
+opencv-python
+jupyter
+pandas
+wandb
