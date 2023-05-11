@@ -7,6 +7,10 @@ TODO:
 - [x] Setup python 3.9
 - [x] Install basic environments
 - [x] Make a environment.txt file
+- [ ] Make git accessible from inside
+    - [ ] Allow internet connection both ways
+    - [ ] Add git
+- [ ] Possible to make a bridge with dvc outside?
 - [] Test moving from one remote to another (migrating data version control remote)
 
 ## DVC cheat sheet
