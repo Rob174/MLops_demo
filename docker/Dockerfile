@@ -7,15 +7,14 @@ RUN apt-get update && \
     apt-get install -y curl && \
     curl -fsSL https://code-server.dev/install.sh | sh
 
-# Copy requirements.txt and install dependencies
-COPY ./docker/requirements.txt .
-RUN pip install -r requirements.txt
 
 # Copy code files
 COPY code/ /app/code/
 
 # Mount point for data volume
 VOLUME /app/data
+VOLUME /app/docker
+RUN pip install -r ./docker/requirements.txt
 
 # Expose port for VS Code
 ENV PASSWORD "password"
