@@ -10,6 +10,7 @@ services:
       - ./code:/app/code
       - ./data:/app/data
       - .vscode/:/app/.vscode
+      - ./docker/:/app/docker/
     environment:
       - GIT_SSH_COMMAND=ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
     deploy:
