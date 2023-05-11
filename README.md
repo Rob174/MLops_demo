@@ -3,9 +3,9 @@ A project designed to setup a full deep learning environment with virtualization
 
 
 TODO:
-- [] Setup docker
-- [] Setup python 3.9
-- [] Install basic environments
-- [] Make a environment.txt file or another way to reproduce it?
+- [x] Setup docker
+- [x] Setup python 3.9
+- [x] Install basic environments
+- [x] Make a environment.txt file
 - [] Install mlops tools (Wandb, DVC, git)
 - [] Test moving from one remote to another (migrating data version control remote
