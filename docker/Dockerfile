@@ -4,12 +4,14 @@ FROM tensorflow/tensorflow:latest-gpu
 WORKDIR /app
 # Install dependencies for VS Code
 RUN apt-get update && \
-    apt-get install -y curl && \
+    apt-get install -y git curl && \
     curl -fsSL https://code-server.dev/install.sh | sh
 
 
 # Copy code files
 COPY code/ /app/code/
+# Copy requirements.txt
+COPY docker/requirements.txt /app/docker/requirements.txt
 
 # Mount point for data volume
 VOLUME /app/data

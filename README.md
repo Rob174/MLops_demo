@@ -13,8 +13,24 @@ TODO:
 - [ ] Possible to make a bridge with dvc outside?
 - [] Test moving from one remote to another (migrating data version control remote)
 
+## Quick start
+Launch docker desktop on windows
+
+```
+dvc init;dvc config cache.type reflink,copy;dvc checkout --relink;
+dvc remote add hdd ...
+dvc remote default hdd
+docker-compose build
+docker-compose up
+```
+Note: for build expect ~13min
+Then in vscode open `RemoteExplorer` and attach to existing container
+
 ## DVC cheat sheet
 
+`dvc add ...path.. --to-remote`: add the modifications and push them directly on the remote (especially useful if copy strategy)
+
+`dvc remote add remoteName C:/...`: Add a local remote
 `dvc remote add C:/...`: Add a local remote
 `dvc unprotect ...`: remove the protection of a file / folder **only required with hardlink and symlink**
 `dvc push`: push elements on the remote
