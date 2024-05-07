@@ -57,3 +57,15 @@ symlink: Symbolic (a.k.a. "soft") links are the most efficient way to link your 
 copy: An inefficient "linking" strategy, yet supported on all file systems. Using copy means there will be no file links, but that the tracked files will be duplicated as copies existing in both the cache and workspace. Suitable for scenarios with relatively small data files, where copying them is not a storage performance concern 
 
 `dvc gc --not-in-remote --workspace`: remove objects that have already been pushed to the remote from the cache
+
+## Useful links
+
+- Find the requirements of a project by just analysing the code https://github.com/bndr/pipreqs
+- Find the call grap by static analysis https://github.com/Technologicat/pyan
+- Tests with pandas https://github.com/unionai-oss/pandera
+- Setup custom environment for tests https://github.com/wntrblm/nox
+- Sample profiler https://github.com/benfred/py-spy
+- Hyperparameter search https://github.com/optuna/optuna
+- Viewer for Python profiling data https://github.com/jiffyclub/snakeviz
+- Paralellization in python https://github.com/ray-project/ray
+- 
